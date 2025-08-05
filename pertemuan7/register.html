@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <!--div pengelopokan khusush untuk register-->
+  <body>
+    <div>
+      <form action="contact.php" method="post"></form>
+      <fieldset>
+        <legend>registrasi</legend>
+        <div>
+          <label> Nama</label>
+          <input type="text" name="nama" placeholder="nama lengkap..." />
+        </div>
+        <div>
+          <label>Username</label>
+          <input type="text" name="username" placeholder="Username..." />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="text" name="email" placeholder="your email" />
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Password..." />
+        </div>
+        <div>
+          <label>Jenis kelamin</label>
+          <label>
+            <input
+              type="radio"
+              name="Jenis_kelamin"
+              value="Laki-laki"
+            />Laki-laki</label
+          >
+          <label>
+            <input
+              type="radio"
+              name="Jenis_kelamin"
+              value="Perempuan"
+            />Perempuan</label
+          >
+        </div>
+        <div>
+          <label>Agama</label>
+          <select name="agama">
+            <option value="islam">islam</option>
+            <option value="kristen">kristen</option>
+            <option value="hindu">hindu</option>
+            <option value="budha">budha</option>
+          </select>
+        </div>
+        <div>
+          <label>Biografi</label>
+          <textarea name="Biografi"></textarea>
+        </div>
+        <div>
+          <input type="submit" name="submit" value="daftar" />
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
