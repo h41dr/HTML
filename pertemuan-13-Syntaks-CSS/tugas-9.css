@@ -1,12 +1,23 @@
+h1{
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .sub-judul-besar {
   color: #ff0000;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 #sub-judul-kecil {
   color: #06402b;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 i {
   color: blue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .footer {
   color: #ff0000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}   
