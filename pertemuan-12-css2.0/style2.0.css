@@ -1,0 +1,12 @@
+h2 {
+  color: blue;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+#header {
+  background: grey;
+}
+input[type="text"] {
+  background: yellow;
+}
