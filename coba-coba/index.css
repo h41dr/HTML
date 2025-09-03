@@ -1,0 +1,14 @@
+div {
+  background-color: black;
+  border-radius: 10cm;
+  height: 100px;
+   display: flex;
+  justify-content: center; /* tengah horizontal */
+  align-items: center;     /* tengah vertikal */
+  height: 150px;   
+  display: flexbox;
+}
+h1 {
+  marker-end: 100px;
+  color: white;
+}

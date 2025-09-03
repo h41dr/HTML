@@ -1,0 +1,44 @@
+h1 {
+  color: blue;
+  background-image: url(../pertemuan-14-bg/atribut/Joko_Widodo_2019_official_portrait.jpg.webp);
+  background-repeat: no-repeat;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 75%,
+    rgba(252, 70, 107, 1) 24%
+  );
+}
+.font-sans-serif {
+  font-weight: lighter;
+  color: blue;
+}
+.font-serif {
+  font-weight: bold;
+  color: red;
+}
+.font-monospace {
+  font-weight: normal;
+  color: green;
+}
+.font-cursive {
+  font-weight: small;
+  color: yellow;
+}
+.font-fantasy {
+  font-weight: bolder;
+  color: violet;
+}
+.tebal-pake-angka {
+  font-weight: 500;
+}
+blockquote {
+  font-style: italic;
+}
+/* pake google */
+
+.kapakana-uniquifier {
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}

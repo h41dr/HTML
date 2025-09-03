@@ -1,0 +1,63 @@
+div {
+  color: green;
+}
+p {
+  color: blue;
+}
+b {
+  font-size: large;
+}
+.pink {
+  color: white;
+  background-color: pink;
+  padding: 3px;
+  font-weight: 700;
+}
+.text-white {
+  color: white;
+}
+.bg-teal {
+  background: teal;
+}
+#header {
+  background: teal;
+  color: white;
+  height: 100px;
+  padding: 50px;
+}
+input[type="text"] {
+  background: none;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  width: 400px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: teal;
+  background: red;
+  text-decoration: none;
+}
+.home:hover {
+  color: teal;
+  background: white;
+  text-decoration: none;
+}
+p::first-line {
+  color: magenta;
+}
+/* p span{
+    color: magenta;
+} */
+/* tambahan */
+/* kalo input harus teliti mau masukin yg mana (type[]) */
+/* universal (*) untuk semuanya */
+/* elemen saat diklik, saat fokus, saat disentuh, dan lain sebagainya 
+Nah, dengan selektor ini kita bisa menentukan tampilan dari elemen 
+pada state tersebut. */

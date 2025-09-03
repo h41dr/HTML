@@ -1,0 +1,242 @@
+nav {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(46, 139, 87);
+  padding: 10px 20px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.logo2 {
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99vw;
+}
+a:hover {
+  color: black;
+}
+.li1 {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.li2 {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.li3 {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.Logo {
+  height: 150px;
+  margin-right: 15px;
+}
+.artikel1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.tentangsaya {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 70px;
+}
+.visi1 {
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px;
+  margin-top: 50px;
+  text-align: justify;
+  font-size: 35px;
+}
+.visi2 {
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px;
+  max-width: 1500px;
+  text-align: justify;
+  font-size: 25px;
+}
+.misi1 {
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px;
+  margin-top: 50px;
+  text-align: end;
+  font-size: 35px;
+}
+.misi2 {
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px;
+  max-width: 1500px;
+  margin-left: 1000px;
+  text-align: end;
+  font-size: 25px;
+  margin-bottom: 70px;
+}
+.selogan {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
+.selogan2 {
+  border-radius: 20px;
+  background-color: rgb(46, 139, 87);
+  padding: 80px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.selogan3 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 35px;
+}
+.selogan4 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  margin-top: 10px;
+}
+.fasilitas {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 25px;
+}
+.lingkungan {
+  font-family: "Times New Roman", Times, serif;
+  margin: 30px;
+  margin-top: auto;
+  text-align: center;
+  font-size: 40px;
+}
+.fasilitas2 {
+  font-family: "Times New Roman", Times, serif;
+  max-width: 800px;
+  margin-top: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+}
+.card {
+  width: 300px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.card2 {
+  width: 300px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.card3 {
+  width: 300px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.card4 {
+  width: 300px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.allcard {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.taek {
+  margin: 16px;
+  padding: 16px;
+  width: 530px;
+  height: 450px;
+  border-radius: 30px;
+}
+.futsal {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 30px;
+  width: 530px;
+  height: 450px;
+}
+.kuda {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 30px;
+  width: 530px;
+  height: 450px;
+}
+.h1kegiatan {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  text-align: center;
+}
+.kegiatan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pkegiatan {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.kegiatan2 {
+  text-align: center;
+  font-size: 50px;
+}
+.kg {
+  margin-top: 40px;
+}
+footer {
+  text-align: center;
+  margin-top: 50px;
+  border: 1px solid black;
+  background-color: rgb(46, 139, 87);
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+.footer2 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,39 @@
+.apa{
+    color: #a52a2a;
+    text-decoration: underline;
+    text
+}
+p{
+    color: chartreuse;
+    text-align: justify;
+    line-height: 1,5;
+}
+p.paragraf{
+    color: cadetblue;
+    font-size: 18px;
+    font-style: italic;
+}
+input[type="text"]{
+    border-color: aquamarine;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+}
+.apa:hover{
+    color: green;
+    text-decoration: underline;
+}
+h1::first-letter{
+    content: "selamat datang";
+    font-size: 32px;
+    color: rgb(255, 0,0);
+    font-style: italic;
+}
+.cihuy::first-line{
+    color: blue;
+    font-size: 40px;    
+}
+*{
+    border-style: solid;
+    color: black;
+}

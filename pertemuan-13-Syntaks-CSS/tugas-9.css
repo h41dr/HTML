@@ -1,6 +1,6 @@
-h1{
-    color: blue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1 {
+  color: blue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .sub-judul-besar {
   color: #ff0000;
@@ -20,4 +20,4 @@ i {
 }
 p {
   font-family: Arial, Helvetica, sans-serif;
-}   
+}
