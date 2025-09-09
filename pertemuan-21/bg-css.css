@@ -1,0 +1,28 @@
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: aliceblue;
+  text-align: center;
+  padding: 30px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.gradient {
+  background: #ffffff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 18%,
+    rgba(9, 9, 121, 1) 54%,
+    rgba(0, 212, 255, 1) 83%
+  );
+  color: #ffffff;
+  padding: 100px;
+  text-align: center;
+  height: 400px;
+}
+body{
+  background-image: url(../pertemuan-21/asets/gamabar1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,14 @@
+.div1 {
+  background: black;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.div2 {
+  background: red;
+  padding: 100px;
+}
+.div3 {
+  background: blue;
+  padding: 100px;
+}
