@@ -1,0 +1,49 @@
+header {
+  border-radius: 30px;
+  padding: 15px;
+  margin-bottom: 100px;
+}
+.bromo {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 60px;
+  color: cornsilk;
+}
+body {
+  background-image: url(../pertemuan-23/asts/Mount_Bromo_East_Java.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+img {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  width: 900px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+h2 {
+  padding-top: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: cornsilk;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: bisque;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+footer {
+  padding: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  color: cornsilk;
+  text-align: center;
+}
