@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Sizing dengan em</title>
+
+    <style>
+      h2 {
+        /* maksudnya 1,5 x 10(root HTML) = 15 px */
+        font-size: 1.5 rem;
+      }
+      p {
+        /* maksudnya 2m x 16px (root HTML) = 32 px */
+        font-size: 2em;
+      }
+
+      footer {
+        border-top: 1px solid silver;
+        padding: 1em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Latihan Sizing dengan em dan rem</h1>
+    </header>
+
+    <article>
+      <h2>Judul ini ukuran satuan rem</h2>
+      <p>
+        Ini adalah paragraf yang ukurannya menggunakan satuan em dengan besar
+        2em atau 2x16px = 32px.
+      </p>
+    </article>
+
+    <footer>
+      <div>&copy; Petani Kode</div>
+    </footer>
+  </body>
+</html>

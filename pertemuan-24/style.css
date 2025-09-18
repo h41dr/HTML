@@ -1,0 +1,61 @@
+h1 {
+  font-size: 24px;
+  color: slateblue;
+}
+.font-big {
+  font-size: x-large;
+}
+.font-small {
+  font-size: small;
+}
+.tebal {
+}
+.light {
+  font-weight: lighter;
+}
+.bold {
+  font-weight: bold;
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+.miring {
+  font-style: italic;
+}
+blockquote {
+  font-style: italic;
+  font-size: large;
+  color: dodgerblue;
+}
+cite {
+  font-size: small;
+  font-style: normal;
+  color: fuchsia;
+}
+.sans {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+.serif {
+  font-family: serif;
+  font-size: 40px;
+}
+.monospace {
+  font-family: monospace;
+  font-size: 40px;
+}
+.cursive {
+  font-family: cursive;
+  font-size: 40px;
+}
+.fantasy {
+  font-family: fantasy;
+  font-size: 40px;
+}
+
+.kapakana{
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

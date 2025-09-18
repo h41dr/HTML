@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #333;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none; /* Menghilangkan titik-titik pada daftar */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Membuat list item sejajar */
+}
+
+nav ul li {
+    margin-left: 20px; /* Jarak antar menu */
+}
+
+nav ul li a {
+    color: white; /* Warna teks tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 18px;
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Warna saat mouse hover */
+}
