@@ -1,30 +1,51 @@
-div {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav {
+
+/* Gaya Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
   background-color: #333;
+  padding: 15px 30px;
   border-radius: 20px;
-  top: 0;
 }
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul li {
-  text-decoration: none;
-  padding-left: 20px;
-}
-nav ul li a {
-  text-decoration: none;
+
+/* Logo */
+.logo {
   color: white;
+  font-size: 24px;
+  font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
 }
-a:hover {
-  color: blue;
+
+/* Menu Link */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* transition: background 0.3s; */
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
