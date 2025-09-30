@@ -1,0 +1,94 @@
+/* .img {
+  float: right;
+  width: 150px;
+  margin-left: 20px;
+} */
+/* body {
+  margin-left: 600px;
+  margin-right: 600px;
+}
+.div1 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.div2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.div3 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.img2 {
+  float: left;
+  width: 150px;
+  margin-left: 20px;
+}
+.img3 {
+  float: right;
+  width: 150px;
+  margin-right: 20px;
+}
+.img4 {
+  float: left;
+  width: 150px;
+  margin-left: 20px;
+} */
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  float: left;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  float: left;
+}
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  float: left;
+  /* clear: left; */
+}
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  float: right;
+}
+.box5 {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  float: right;
+}
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  float: right;
+  /* clear: right; */
+}
+#clearfix {
+  overflow: auto;
+}
+.element1 {
+  float: left;
+  width: 300px;
+  height: 200px;
+  background-color: yellow;
+}
+.element2 {
+  float: right;
+  width: 300px;
+  height: 200px;
+  background-color: blue;
+}
+.clearfix2::after {
+  content: "";
+  display: block;
+  clear: both;
+}
