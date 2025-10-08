@@ -1,0 +1,724 @@
+1. Pengantar HTML
+
+Apa itu HTML? HTML atau HyperText Markup Language merupakan sebuah bahasa markah
+untuk membuat halaman web Jadi, HTML itu adalah sebuah bahasa yang menggunakan
+markup atau penanda untuk membuat halaman web. Penanda atau markup ini, nanti
+akan kita sebut dengan Tag. HTML berperan untuk menentukan struktur konten dan
+tampilan dari sebuah web. HTML itu seperti batu bata untuk membangun rumah. Batu
+bata ini dapat disusun, hingga menjadi fondasi dasar.
+<!--  -->
+Dalam membuat halaman web, HTML tidak sendirian. Ada bahasa lain lagi yang menjadi pelengkapnya, yakni CSS dan Javascript.
+CSS adalah bahasa khusus yang digunakan untuk memperindah tampilan web.
+Lalu Javascript bertugas untuk membuat halaman web menjadi hidup. Karena dengan Javascript, kita dapat menentukan fungsi-fungsi maupun efek yang akan diterapkan di website.
+<!--  -->
+Fungsi HTML:
+    Struktur Halaman: HTML digunakan untuk mengatur struktur dan hierarki elemen-elemen dalam halaman web. Tag-tag HTML seperti <header>, <nav>, <section>, <article>, dan <footer> membantu mengorganisir dan membagi halaman web menjadi bagian-bagian yang terpisah.
+    Penyajian Konten: HTML memungkinkan penampilan konten pada halaman web. Melalui penggunaan tag seperti <p> (paragraf), <h1> - <h6> (heading), <ul> (daftar tak-berurutan), <ol> (daftar terurut), <img> (gambar), dan lainnya, HTML memungkinkan penampilan teks dan elemen-elemen lainnya dengan cara yang terstruktur.
+    Hyperlink dan Navigasi: HTML memungkinkan pembuatan tautan atau hyperlink antara halaman web. Dengan menggunakan tag <a> (anchor), pengguna dapat membuat tautan yang menghubungkan halaman web satu dengan yang lain, serta menghubungkan ke bagian-bagian tertentu dalam halaman yang sama.
+
+Sejarah HTML:
+HTML dikembangkan pertama kali oleh Tim Berners-Lee pada awal 1990-an di CERN (Organisasi Eropa untuk Riset Nuklir) sebagai bagian dari proyek World Wide Web. Versi pertama HTML dikenal sebagai HTML 1.0, yang kemudian diikuti oleh HTML 2.0, HTML 3.2, HTML 4.01, dan XHTML.
+
+Pada tahun 1999, standar HTML5 mulai dikembangkan oleh World Wide Web Consortium (W3C). HTML5 membawa banyak perubahan dan peningkatan ke dalam bahasa markup, termasuk dukungan untuk multimedia, elemen-elemen baru, formulir yang diperbaiki, dan kemampuan untuk membuat aplikasi web interaktif.
+
+HTML5 menjadi standar baru yang sangat populer dan mendapatkan dukungan luas dari berbagai browser dan perangkat. Ini memperluas kemampuan HTML dan memungkinkan pengembangan web modern yang lebih kaya dan interaktif. HTML5 juga mencakup fitur-fitur semantik dan aksesibilitas yang lebih baik, memungkinkan mesin pencari dan teknologi bantuan untuk lebih memahami konten web.
+
+<!--  -->
+Sejarah HTML:
+HTML dikembangkan pertama kali oleh Tim Berners-Lee pada awal 1990-an di CERN (Organisasi Eropa untuk Riset Nuklir) sebagai bagian dari proyek World Wide Web. Versi pertama HTML dikenal sebagai HTML 1.0, yang kemudian diikuti oleh HTML 2.0, HTML 3.2, HTML 4.01, dan XHTML.
+<!--  -->
+HTML5 menjadi standar baru yang sangat populer dan mendapatkan dukungan luas dari berbagai browser dan perangkat. Ini memperluas kemampuan HTML dan memungkinkan pengembangan web modern yang lebih kaya dan interaktif. HTML5 juga mencakup fitur-fitur semantik dan aksesibilitas yang lebih baik, memungkinkan mesin pencari dan teknologi bantuan untuk lebih memahami konten web.
+<!--  -->
+Teks Editor untuk Menulis HTML
+Notepad 
+Notepad++
+Visual Studio Code
+Sublime Text
+Dll
+Web Browser untuk Membuka HTML
+Chrome
+Firefox
+Safari
+Edge
+Dll
+<!--  -->
+Nama File untuk HTML
+Ada beberapa hal yang perlu diperhatikan dalam membuat nama file HTML:
+
+1. Extensi file HTML
+Setiap file HTML harus berekstensi .html, .xhtml (untuk XHTML), dan .htm saja. Jika tidak menggunakan ekstensi ini, maka ia tidak akan bisa dibaca oleh web browser.
+Contohnya seperti ini:
+Nama filenya adalah hello-world.txt.
+ini bukan file HTML, melainkan sebuah file teks biasa. Maka.. browser akan menampilkan isi file tersebut apa adanya.
+<!--  -->
+Gunakan Huruf Kecil: 
+Meskipun sistem operasi modern biasanya tidak membedakan antara huruf besar dan kecil dalam penamaan file, sebaiknya gunakan huruf kecil untuk konsistensi dan membantu mencegah masalah saat memindahkan file ke sistem atau server yang mengikuti perbedaan besar-kecil huruf.
+hindari menggunakan spasi pada nama file HTML, agar URL yang dibentuk lebih bagus.
+
+Spasi pada URL, biasanya akan otomatis diubah menjadi %20.
+<!--  -->
+2. Nama Khusus untuk Homepage
+Jika kamu ingin membuat halaman untuk homepage, maka sebaiknya gunakan nama index.html. Karena ia akan otomatis dibuka saat website dikunjungi.
+Contohnya, saat kamu membuka www://abudzarplus.ponpes.id maka file HTML yang akan dibuka adalah index.html yang berada di server abudzar.
+
+2. Struktur Dasar HTML
+
+<!--  -->
+Deklarasi dalam HTML mengacu pada deklarasi tipe dokumen (document type declaration) yang ditempatkan di bagian atas halaman HTML untuk mengindikasikan jenis dokumen yang digunakan. Deklarasi ini memberi tahu browser dan aplikasi pengolah HTML bagaimana dokumen tersebut harus diinterpretasikan.
+Dalam HTML, deklarasi dokumen dinyatakan dengan menggunakan <!DOCTYPE>. 
+Lalu apakah boleh kita tidak menulis kode <!DOCTYPE html> ini?
+Boleh-boleh saja.. dokumen HTML-nya akan tetap bisa dibuka di web browser. Tapi, ini tentunya akan melanggar aturan standar yang dibuat W3C.
+apakah HTML yang ditulis sudah benar atau tidak di https://validator.w3.org/.
+<!--  -->
+Penjelasan deklarasi tersebut:
+<!DOCTYPE html>: Ini adalah deklarasi untuk dokumen HTML5. Ini memberi tahu browser bahwa dokumen ini adalah dokumen HTML5 dan harus diinterpretasikan sesuai dengan aturan HTML5.
+Deklarasi dokumen harus ditempatkan di bagian paling atas halaman HTML sebelum elemen <html>. Hal ini penting karena browser menggunakan deklarasi untuk menentukan mode rendering dan perilaku halaman. Deklarasi dokumen yang valid dan tepat membantu memastikan kompatibilitas dan konsistensi dalam penampilan halaman web di berbagai browser.
+Selain deklarasi dokumen, ada juga deklarasi karakter yang sering ditempatkan di dalam elemen <head> menggunakan elemen <meta>. Contohnya adalah <meta charset="UTF-8">, yang mendefinisikan set karakter yang digunakan dalam dokumen HTML. Dalam contoh di atas, set karakter yang digunakan adalah UTF-8, yang merupakan set karakter universal yang mendukung berbagai karakter dan simbol dari banyak bahasa.
+<!--  -->Bagian HEAD adalah bagian kepala dari HTML. Dimulai dari tag <head> dan ditutup dengan </head>.
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Belajar HTML #01</title>
+    </head>
+    <body>
+        <p>Hello World!</p>
+    </body>
+</html>
+
+Pada bagian HEAD, biasanya digunakan untuk menuliskan tag-tag yang akan dibaca oleh mesin.
+Seperti:
+Tag meta untuk SEO;
+Tag <title> untuk judul;
+Tempat menulis kode CSS dan Javascript;
+dan lain-lain.
+<!--  -->
+Bagian BODY adalah bagian yang akan ditampilkan pada web browser. Penulisannya di mulai dari tag <body> dan ditutup dengan </body>.
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Belajar HTML #01</title>
+    </head>
+    <body>
+        <p>Hello World!</p>
+    </body>
+</html>
+
+Di sinilah nanti kita akan banyak menuliskan konten dengan berbagai macam tag. Saat ini kita baru mengisinya dengan tag <p>. Tag <p> adalah tag yang digunakan untuk membuat paragraf.
+<!--  -->
+
+3. Tag , Elemen & Atribut HTML
+
+Apa itu Tag?
+Tag adalah sebuah penanda awalan dan akhiran dari sebuah elemen di HTML. Tag dibuat dengan kurung siku (<...>), lalu di dalamnya berisi nama tag dan kadang juga ditambahkan dengan atribut.
+Contoh: <p>, <a>, <body>, <head>, dan sebagainya.
+Tag selalu ditulis berpasangan. Ada tag pembuka dan ada tag penutupnya. Namun, ada juga beberapa tag yang tidak memiliki pasangan penutup. Tag penutup ditulis dengan menambahkan garis miring (/) di depan nama tag.
+<img src="./asets/1.png"  alt="">
+<img src="./asets/2.png" alt="">
+
+<!--  -->
+Setiap tag memiliki fungsi masing-masing. Ada yang digunakan untuk membuat judul, membuat link, membuat paragraf, heading, dan lain-lain.
+Dulu.. awalnya HTML cuma punya 18 tag. Sekarang HTML sudah punya sekitar 250 tag.
+Apa semua tag ini harus kita hafal?
+Jawabannya:
+Tidak harus, saja juga tidak bisa menghafal semanya. Cukup ketahui tag-tag dasar saja.
+Berikut ini daftar tag-tag dasar, yang harus di ingat.
+Tag		Fungsi
+<html>	untuk memulai dokumen HTML
+<head>	untuk membuat bagian head
+<body>	untuk membuat bagian body
+<h1> sampai <h6>	untuk membuat heading pada artikel
+<p>	untuk membuat paragraf
+<!-- -->	untuk membuat komentar
+Nanti kita akan perkenalkan tag-tag lain yang umum digunakan dalam pembuatan web.
+Untuk saat ini, cukup pahami: Apa itu tag dan cara menulisnya.
+<!--  -->
+Fungsi Tag HTML:
+Setiap tag HTML memiliki fungsi dan peran yang berbeda dalam membangun dan mengatur tampilan halaman web. Beberapa fungsi umum tag HTML adalah:
+Membuat struktur dan hierarki konten di halaman web.
+Menampilkan dan memformat teks, gambar, video, audio, dan elemen multimedia lainnya.
+Membuat tautan ke halaman web atau sumber daya lainnya.
+Membuat formulir dan mengumpulkan data dari pengguna.
+Membuat daftar tak-terurut dan terurut.
+Membuat tabel untuk menampilkan data secara tabular.
+Memberikan struktur semantik pada halaman web untuk meningkatkan aksesibilitas dan optimisasi mesin pencari.
+<!--  -->
+Untuk menulis tag HTML yang benar, Kita perlu mengikuti beberapa pedoman dan aturan sintaksis. Berikut adalah beberapa langkah yang dapat Anda ikuti:
+Tag HTML ditulis dalam sintaksis angle bracket ("<" dan ">"). Setiap tag memiliki tag pembuka (opening tag) dan tag penutup (closing tag), kecuali untuk beberapa tag yang tidak memerlukan penutup, seperti tag <br> atau <img>. Contoh: <tag>konten</tag>.
+Nama tag ditulis dengan huruf kecil. HTML bersifat case-insensitive, tetapi sangat disarankan untuk menggunakan huruf kecil untuk konsistensi dan keseragaman. Contoh: <p>, <a>, <h1>, bukan <P>, <A>, <H1>.
+Beberapa tag HTML memiliki atribut yang memberikan informasi tambahan tentang elemen tersebut. Atribut dituliskan di dalam tag pembuka dan memiliki format nama="nilai". Contoh: <a href="https://www.example.com">.
+Pastikan tag HTML terletak dalam urutan yang tepat dan tertutup dengan benar. Tag pembuka harus diikuti oleh tag penutup yang sesuai untuk mengelompokkan konten di antara keduanya. Contoh: <p>Paragraf teks</p>. Beberapa tag, seperti <img> atau <br>, tidak memerlukan penutup dan dapat ditulis sebagai tag tunggal. Contoh: <img src="gambar.jpg" alt="Deskripsi Gambar">.
+Perhatikan indentasi dan tata letak kode yang baik untuk memudahkan membaca dan memahami struktur halaman web. Gunakan spasi atau tab untuk mengatur indentasi elemen yang bersarang. Contoh:
+<div>
+    <h1>Judul</h1>
+    <p>Paragraf teks.</p>
+</div>
+    Perhatikan tanda kutip untuk nilai atribut yang mengapit nilai tersebut. Gunakan tanda kutip ganda (") atau tanda kutip tunggal (') dengan konsistensi. Contoh: <a href="https://www.example.com">.
+
+    Gunakan entitas HTML atau karakter khusus untuk menyisipkan karakter khusus seperti tanda kurung sudut (< atau >), tanda kutip ganda, atau tanda kutip tunggal dalam teks. Contoh: &lt; untuk "<", &gt; untuk ">", &quot; untuk tanda kutip ganda, dan &apos; untuk tanda kutip tunggal.
+
+    Selalu lengkapi elemen <html>, <head>, dan <body> dalam halaman web Anda. <html> adalah elemen root, <head> berisi informasi tentang halaman, dan <body> berisi konten yang akan ditampilkan di halaman. Contoh:
+
+html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Judul Halaman</title>
+</head>
+<body>
+    <!-- Konten halaman web -->
+</body>
+</html>
+
+Dengan mengikuti pedoman dan aturan sintaksis ini, Anda dapat menulis tag HTML yang benar dan membangun halaman web dengan struktur yang sesuai dan valid.
+<!--  -->
+Apa itu Elemen?
+Elemen dalam HTML adalah sebuah komponen yang menyusun dokumen HTML. Elemen kadang juga disebut sebagai node, karena ia merupakan salah satu jenis node yang menyusun dokumen HTML dalam diagram HTML tree.
+<img src="./asets/element.png" alt="">
+Pada diagram tersebut, terdapat tiga macam node.. yakni: Node elemen, Node atribut, dan Node teks.
+<!--  -->
+Elemen dibentuk dari tag pembuka, isi tag, dan tag penutup. Kadang juga ditambahkan beberapa atribut.
+<img src="./asets/element.2.0.png" alt="">
+Pada contoh di atas, terdapat satu elemen <p> dengan atribut align="center" dan memiliki isi berupa teks, yakni Hello World!.
+Elemen tidak selalu berisi teks, kadan ia juga akan berisi elemen lain. Ini biasanya kita sebut dengan nested element atau elemen di dalam elemen
+<!--  -->
+Fungsi Elemen HTML:
+Menampilkan dan memformat teks, gambar, video, audio, dan elemen multimedia lainnya.
+Membangun struktur dan hierarki konten di halaman web.
+Membuat tautan ke halaman web atau sumber daya lainnya.
+Membuat formulir dan mengumpulkan data dari pengguna.
+Membuat daftar tak-terurut dan terurut.
+Menampilkan dan mengorganisir data dalam bentuk tabel.
+Memberikan struktur semantik pada halaman web untuk meningkatkan aksesibilitas dan optimisasi mesin pencari.
+Memberikan efek formatting seperti tebal, miring, atau garis bawah pada teks.
+<!--  -->
+Apa itu Atribut?
+Atribut adalah kata kunci khusus yang berada di dalam tag pembuka. Atribut juga disebut sebagai modifier yang akan menentukan perilaku dari elemen.
+<img src="./asets/atribut.png" alt="">
+Atribut dalam HTML
+Atribut dapat ditambahkan pada elemen manapun. Ada juga elemen yang mewajibkan menggunakan atribut seperti elemen <a>, <img>, <video>, dll.
+
+Contoh:
+
+<a href="https://petanikode.com">Petanikode.com</a>
+Tag <a> adalah tag untuk membuat link. Tag ini mewajibkan menambahkan atribut href untuk menyatakan halaman tujuan dari link.
+
+Jumlah atribut pada elemen bisa lebih dari satu.
+
+Contoh:
+
+<img src="gambar.jpg" width="100" height="100" />
+Atribut src adalah atribut khusus untuk tag <img> yang fungsinya untuk menentukan gambar yang akan ditampilkan. Lalu atrubut width dan height adalah atribut yang mengatur ukurannya.
+<!--  -->
+Jenis-jenis Atribut HTML
+Tiap-tiap elemen kadang memiliki atribut khusus yang hanya bisa digunakan pada elemen tersebut. Ada juga atribut yang bersifat global dan bisa ditambahkan ke semua elemen.
+<!--  -->
+Dalam HTML, paragraf dibuat dengan tag <p> dan atribut untuk mengubah tampilannya seperti align (perataan teks). Baris baru dibuat dengan tag <br> dan garis horisontal dengan <hr>. Mengelompokkan elemen menjadi grup dapat menggunakan tag <div> atau <span>. 
+4.1. Membuat Paragraf 
+Tag: Gunakan tag <p> untuk membuka dan </p> untuk menutup paragraf, berisi teks yang akan ditampilkan sebagai satu blok paragraf.
+4.2. Atribut untuk Paragraf 
+align: Mengontrol perataan teks dalam paragraf (misalnya left, center, right). Contohnya <p align="center">Teks di tengah</p>.
+4.3. Membuat Baris Baru pada Tag Paragraf 
+Tag: Gunakan tag <br> di dalam paragraf untuk memaksa teks berpindah ke baris baru tanpa membuat paragraf baru, Codepolitan.
+4.4. Membuat Garis pada Tag Paragraf 
+Tag: Gunakan tag <hr> untuk menyisipkan garis horisontal yang memisahkan konten, Codepolitan.
+4.5. Mengelompokkan Tag atau Elemen Menjadi Suatu Grup
+Tag: Gunakan tag <div> untuk mengelompokkan blok-blok elemen atau <span> untuk elemen sebaris, yang berguna untuk menerapkan gaya atau manipulasi JavaScript pada keseluruhan grup, GeeksforGeeks.
+4.6. Style untuk Paragraf
+CSS: Anda dapat mengatur gaya (style) paragraf menggunakan CSS (Cascading Style Sheets), seperti warna teks, ukuran font, dan spasi. Contoh: <p style="color: blue; font-size: 16px;">Teks berwarna biru dengan ukuran 16 piksel</p>.
+<!--  -->
+Pengertian, Jenis, dan Fungsi Heading pada HTML
+Pengertian
+Heading adalah elemen HTML yang digunakan untuk membuat judul atau subjudul pada sebuah halaman web. Heading membantu pembaca dan mesin pencari untuk memahami struktur dan isi dari halaman web.
+Jenis Heading
+HTML memiliki enam jenis heading, dari <h1> sampai <h6>. Heading <h1> digunakan untuk judul utama, sedangkan <h6> digunakan untuk subjudul atau judul bagian yang lebih kecil.
+Fungsi Heading
+Heading digunakan untuk menentukan hierarki informasi di halaman web, memudahkan navigasi, dan meningkatkan SEO dengan menandai konten penting.
+<!--  -->
+Hierarki Heading
+Heading <h1> adalah yang tertinggi dan digunakan untuk judul utama. Heading <h2> sampai <h6> digunakan untuk subjudul, dengan <h6> menjadi yang terendah dalam hierarki.
+
+Penggunaan Berurutan
+Penggunaan heading harus berurutan, dimulai dari <h1> diikuti dengan <h2>, <h3>, dan seterusnya. Ini membantu struktur halaman menjadi lebih terorganisir dan mudah dipahami.
+
+Praktik Terbaik
+Hindari melewati tingkat heading, misalnya, jangan langsung dari <h1> ke <h3> tanpa menggunakan <h2>. Ini menjaga logika dan keterbacaan konten.
+<!--  -->
+Perbedaan Heading dengan Title dan Header
+Heading
+Heading adalah elemen HTML yang digunakan untuk menandai judul atau subjudul dalam konten halaman web.
+Title
+Title adalah elemen HTML yang digunakan untuk memberikan judul pada halaman web yang ditampilkan di tab browser atau hasil pencarian.
+Header
+Header adalah elemen HTML yang digunakan untuk menandai bagian atas halaman web yang biasanya berisi logo, navigasi, atau informasi penting lainnya.
+<!--  -->
+Atribut id
+Atribut `id` digunakan untuk memberikan identifikasi unik pada heading, yang bisa digunakan untuk navigasi atau styling melalui CSS.
+Atribut class
+Atribut `class` memberikan satu atau lebih nama kelas untuk heading, yang memudahkan pengelompokan dan penerapan style yang sama pada beberapa elemen.
+Global Atribut
+Heading juga bisa menggunakan atribut global seperti `style`, `title`, dan `data-*` untuk memberikan informasi tambahan atau styling.
+<!--  -->
+CSS untuk Heading
+Heading dapat distyling menggunakan CSS untuk mengubah font, ukuran, warna, dan properti lainnya agar sesuai dengan desain halaman.
+Class dan id
+Menggunakan class dan id memungkinkan pengaturan style yang spesifik untuk setiap heading atau grup heading.
+Inline Style
+Heading juga bisa diberi style langsung di elemen HTML menggunakan atribut `style`, meskipun ini kurang direkomendasikan dibandingkan menggunakan CSS eksternal atau internal.
+<!--  -->
+<!-- Pengertian Komentar pada HTML -->
+Definisi Komentar: Komentar pada HTML adalah teks yang tidak akan ditampilkan di halaman web oleh browser. Komentar digunakan untuk memberikan catatan atau penjelasan dalam kode.
+Sintaks Komentar: Komentar pada HTML ditulis di antara tanda <!-- dan -->. 
+Contoh: <!-- Ini adalah komentar -->.
+Manfaat Komentar: Komentar membantu dalam dokumentasi kode, membuat kode lebih mudah dipahami, dan memungkinkan penonaktifan sementara kode tanpa menghapusnya.
+<!--  -->
+Sintaks Dasar
+Untuk membuat komentar di HTML, letakkan teks di antara <!-- dan -->. 
+Contoh: <!-- Ini adalah komentar -->.
+
+Komentar Multiline
+Komentar dapat mencakup beberapa baris teks. 
+Contoh: <!-- Ini adalah komentar multiline yang mencakup beberapa baris -->.
+
+Praktik Terbaik
+Gunakan komentar untuk menjelaskan bagian kode yang kompleks atau memberikan informasi tambahan untuk developer lain.
+<!--  -->
+Tidak Ada Atribut Khusus
+Komentar pada HTML tidak memiliki atribut khusus seperti elemen HTML lainnya. Mereka hanya digunakan untuk memberikan catatan atau menonaktifkan kode sementara.
+Penggunaan
+Komentar digunakan untuk dokumentasi internal dan memberikan informasi tambahan dalam kode, tetapi tidak ditampilkan pada halaman web.
+Komentar dalam Script
+Dalam elemen `script`, komentar dapat digunakan untuk menonaktifkan bagian dari kode JavaScript tanpa menghapusnya.
+<!--  -->
+Editor Kode
+Sebagian besar editor kode modern seperti VSCode, Sublime Text, dan Atom memiliki jalan pintas untuk membuat komentar. Misalnya, di VSCode, Anda dapat menggunakan `Ctrl + /`.
+IDE
+IDE seperti IntelliJ IDEA dan Eclipse juga memiliki jalan pintas yang serupa untuk menambahkan komentar ke kode dengan cepat.
+Manfaat Shortcut
+Menggunakan jalan pintas membantu menghemat waktu dan meningkatkan produktivitas saat menulis dan mengedit kode.
+<!--  -->
+Dokumentasi Kode
+Komentar digunakan untuk menjelaskan fungsi atau bagian kode tertentu, membuatnya lebih mudah dipahami oleh orang lain atau diri sendiri di masa mendatang.
+Debugging
+Komentar memungkinkan penonaktifan bagian kode sementara untuk tujuan debugging tanpa menghapusnya dari file.
+Kolaborasi
+Dalam tim, komentar membantu developer lain memahami perubahan dan tujuan kode dengan lebih baik, memfasilitasi kolaborasi yang efektif.
+<!--  -->
+<!-- Text Formatting di HTML -->
+Format text bold (tebal). 
+untuk membuat teks menjadi tebal pada tampilan halaman web menggunakan tag <b> berikut syntax HTML untuk membuat format text tebal :
+
+
+<b>ini text tebal</b>
+format text italic (miring). untuk membuat teks miring pada HTML menggunakan tag <i>, contohnya :
+
+<i>ini text miring</i>
+Format text underline (garis bawah), untuk membuat teks underline/garis bawah pada HTML menggunakan tag <u>
+<u>ini text underline</u>
+
+<!--  -->
+tag		description
+<b>		format text bold/tebal
+<i>		format text italic/miring
+<u>		format text underline/garis bawah
+<small>	format text kecil
+<strong>	format text yang hampir sama dengan format bold
+<sub>	format subscripted teks
+<sup>	format superscripted teks
+<ins>		format text garis bawah
+<del>		format text dengan garis di tengah
+<mark>	format text yang berwarna
+
+<!--  -->
+    Link untuk Menghubungkan Halaman Web
+hyperlink yang sering di kenal dengan link yaitu menghubungkan antara satu dokument dengan dokumen yang lain pada HTML. Tujuan dari hyperlink ini membuat sebuah teks atau gambar yang ketika diklik akan di alihkan ke halaman tertentu yang sudah di tetapkan dalam penulisan hyerlink tersebut.
+<!--  -->
+hyperlink sendiri ditulis dengan <a> atau yang kita kenal dengan anchor (jangkar). 
+<a> ini selalu diikiti oleh atribut href, dimana didalam href (hypertext reference) ini lah yang akan diisikan alamat yang dituju ketika text atau gambar diklik.  
+berikut penulisan hyperlink menggunakan <a href=”#”> :
+<a href="https://abudzarplus.ponpes.id/">klik disini</a>
+<!--  -->
+Jenis Hyperlink Pada HTML
+dalam penulisan alamat Membuat Hyperlink Pada HTML memiliki dua jenis yaitu alamat absolute dan alamat alternatif.
+alamat absolute yaitu penulisan alamat file yang disertai dengan alamat website. contohnya :
+<!--  -->
+2. alamat alternatif merupakan penulisan alamat file yang akan di panggil berada dalam aplikasi yang sama, jadi sebelum memanggil file yang diperlikan tidak udah menggunakan nama dari websitenya. 
+
+contohnya saya akan memanggil file katalog.html yang berada dalam projek saya (satu folder dengan halama yang sekarang saya buat)
+<!--  -->
+Text Formatting
+Mempelajari cara memformat teks dengan benar di HTML dapat membuat konten lebih terstruktur dan mudah dibaca.
+Menghubungkan Halaman Web
+Memahami cara membuat link adalah keterampilan dasar yang penting dalam navigasi web dan interkoneksi halaman.
+Latihan dan Eksperimen
+Selalu berlatih dan bereksperimen dengan kode HTML untuk memperdalam pemahaman dan keterampilan.
+<!-- [Link on HTML]  -->
+ <img src="./asets/link.png" alt="">
+ Types Of ‘Links’ {
+
+Internal Link
+
+< link yang menuju ke domain atau halaman web itu sendiri >
+
+External Link
+
+< link yang menuju domain lain >
+
+<!--  -->
+[Internal Link]
+ biasanya digunakan untuk menghubungkan halaman yang satu dengan yang lainnya dalam satu website atau domain 
+
+ [External Link] 
+
+< digunakan untuk membuka web atau domain lain >
+<!-- Attributes -->
+ Attributes { 
+href, target, title, rel, style, etc;
+
+<!--Using Attributes ‘target’  --> {
+
+_blank
+
+< akan membuka link pada jendela atau tab baru >
+
+_self
+
+< membuka link pada halaman itu sendiri (default target) >
+
+_top
+
+< menuju bagian paling atas pada halaman >
+
+_parent
+
+< membuka link pada frame induk >
+
+nama-frame
+
+< akan membuka link pada <iframe> dengan nama tertentu >
+
+    <!--Gmabar  -->
+    sintaks dasar untuk menambahkan gambar:
+
+<img src="URL_Gambar" alt="Deskripsi_Gambar">
+
+Di dalam tag <img>, kita perlu menentukan atribut src yang berisi URL gambar atau alamat file gambar relatif, dan atribut alt yang berisi deskripsi atau teks alternatif yang akan ditampilkan jika gambar tidak dapat ditampilkan.
+
+<img src="gambar.jpg" alt="Gambar Bunga">
+
+Dalam contoh di atas, gambar dengan nama "gambar.jpg" akan ditampilkan, dan deskripsi "Gambar Bunga" akan ditampilkan jika gambar tidak dapat ditampilkan.
+
+
+<!-- 9.3. Format File Gambar untuk HTML -->
+ JPEG (Joint Photographic Experts Group):
+PNG (Portable Network Graphics):
+GIF (Graphics Interchange Format):
+SVG (Scalable Vector Graphics):
+
+<!-- list -->
+ [Ordered List] 
+
+< dibuat dengan tag <ol>. 
+Lalu di dalamnya diisi dengan item-item yang akan dimasukkan ke dalam list.
+Item dibuat dengan tag <li> (list item) >
+<img src="./asets/list.png" alt="">
+
+[Unordered List di HTML] 
+
+< list yang tak terurut yang menggunakan simbol-simbol pada item-nya. Unordered list dibuat dengan tag <ul> dan untuk item-nya dibuat juga dengan tag <li> >
+
+    Attribute value ‘type’ {
+
+
+square
+
+untuk simbol persegi
+
+disc
+
+(default) untuk simbol lingkaran disc
+
+none
+
+tidak memakai simbol
+
+circle
+
+untuk simbol lingkaran
+
+[Description List di HTML] 
+
+< list yang berisi deksripsi atau penjelasan dari sesuatu >
+
+<dl> (description list)
+
+< tag untuk memulai description list >
+
+<dt> (description term)
+
+< tag untuk membuat kata yang akan dideskripsikan >
+
+<dd> (description description)
+
+< Tag untuk membuat penjelasan dari kata>
+<img src="./asets/list2,0.png" alt="">
+
+<!-- [Pengertian Tabel] -->
+< Salah satu cara atau format menampilkan informasi dalam web secara terstruktur, rapi dan mudah dipahami pengguna adalah dengan tabel >
+<img src="./asets/table.png" alt="">
+
+[Tag untuk Membuat Tabel di HTML] 
+
+< Tag yang paling penting untuk diingat adalah tag <table>, <tr>, dan <td>. Sementara tag yang lain adalah tambahan (opsional), boleh digunakan boleh tidak >
+
+    Tag untuk Membuat ‘Tabel’ 
+
+<table> untuk membungkus tabelnya
+
+<thead> untuk membungkus bagian kepala tabel
+
+<tbody> untuk membungkus bagian body dari tabel
+
+<tr> (table row) untuk membuat baris
+
+<td> (table data) untuk membuat sel
+
+<th> (table head) untuk membuat judul pada header
+
+    [Mengatur Jarak Sel dengan Cellpadding] 
+
+< Atribut cellpadding adalah atribut untuk mengatur jarak teks dengan garis di dalam sel. 
+Atribut ini dapat kita berikan kepada tag <table> >
+    <img src="./asets/table.png" alt="">
+
+
+    [Menambahkan Warna pada Sel dan Baris] 
+
+< Menambahkan atribut bgcolor di dalam tag <td> (untuk sel) atau <tr> (untuk baris) >
+    <img src="./asets/warna.png" alt="">
+
+    [Menggabungkan Sel Tabel] 
+
+< Salah satu cara atau format menampilkan informasi dalam web secara terstruktur, rapi dan mudah dipahami pengguna adalah dengan tabel >
+rowspan
+
+< untuk menggabungkan baris >
+
+colspan
+
+< untuk menggabungkan kolom >
+
+Atribut ini bisa kita berikan kepada tag <td> atau <th>
+<img src="./asets/colspen.png" alt="">
+
+[Menyisipkan Elemen yang Lain ke dalam Sel] 
+
+< Salah satu cara atau format menampilkan informasi dalam web secara terstruktur, rapi dan mudah dipahami pengguna adalah dengan tabel >
+
+<!-- form -->
+ [Pengertian Form] 
+
+< Dalam konteks HTML, "form" adalah sebuah elemen yang digunakan untuk membuat area interaktif di halaman web yang memungkinkan pengguna untuk mengirimkan data ke server. Form digunakan untuk membuat berbagai jenis formulir, seperti formulir pendaftaran, survei, komentar, dan lain-lain. >
+
+[Cara Membuat Form di HTML] 
+
+< Form di HTML dapat kita buat dengan tag <form> >
+
+    action
+
+< untuk menentukan aksi yang akan dilakukan saat data dikirim >
+
+method
+
+< metode pengiriman data >
+
+[Apa itu Field?] 
+
+< Field adalah ruas yang dapat diisi dengan data >
+
+<input type="text" name="info" />
+
+[Field memiliki beberapa atribut yang harus diberikan] 
+
+type
+
+< Merupakan type dari field >
+
+name
+
+< Merupakan nama dari field yang akan menjadi kunci dan variabel di dalam program >
+
+<!-- semantik -->
+ [Pengertian Element Semantik] 
+
+< Element Semantic adalah elemen-elemen yang menyatakan makna atau tujuan dari elemen itu sendiri. Dengan menggunakan semantic HTML, elemen-elemen HTML dipilih dan digunakan berdasarkan fungsi dan makna mereka, bukan hanya berdasarkan tampilan visual. Pendekatan ini membantu meningkatkan aksesibilitas, SEO (Search Engine Optimization), dan pemahaman bagi pengguna dan mesin pencari mengenai konten halaman web >
+
+Daftar elemen-elemen ‘Semantik’ {
+
+<figcaption>
+
+<article>
+
+untuk membuat teks caption pada figure
+
+untuk membuat elemen artikel
+
+<aside>
+
+<figure>
+
+untuk membuat elemen bagian samping
+
+membuat figur atau gambar pada artikel
+
+<details>
+
+<footer>
+
+untuk membuat elemen datail atau spoiler
+
+membuat elemen bagian kaki dari web
+<nav>
+
+<header>
+
+untuk membuat navigasi
+
+membuat kepala kop dari web
+
+<main>
+
+<section>
+
+membuat elemen utama
+
+membuat bagian artikel
+
+<mark>
+
+<summary>
+
+untuk menandai teks
+
+membuat ringkasan artikel atau isi spoiler, dll
+
+[Fungsi dan Penggunaan Elemen Semantik] 
+
+< Salah satu keuntungan menggunakan elemen semantik adalah dokumen HTML kita akan mudah dibaca, baik itu oleh manusia maupun mesin >
+
+<!-- video -->
+ Apa Elemen HTML untuk Memutar Video?
+
+Tag < video > dalam HTML5 adalah elemen yang berfungsi untuk menyematkan video ke dalam halaman web. Penggunaan HTML video sangat vital karena membantu web developer menyematkan video dengan cara yang lebih efisien dan mudah.
+Dengan tag ini, kamu dapat memutar video langsung dari browser tanpa perlu menggunakan plugin tambahan.
+Sebelum adanya tag < video >, proses penyisipan video bisa sangat rumit dan memerlukan pengetahuan khusus. Namun, setelah ada elemen HTML video dalam HTML5, kamu tidak hanya dapat menyematkan video dengan mudah, tetapi juga mengontrol aspek-aspek seperti ukuran, tampilan kontrol, dan format video yang didukung. Hal ini membantu menciptakan pengalaman pengguna yang lebih baik dan membuat konten lebih interaktif.
+
+Format File Video yang Didukung HTML
+
+Saat menyematkan video menggunakan tag < video > dalam HTML, perlu diingat bahwa tidak semua browser mendukung keseluruhan format video. Oleh karena itu, penting untuk mengetahui format file video mana yang didukung oleh HTML, sehingga kamu dapat menyajikan video yang dapat diputar di berbagai browser.
+Secara umum, ada tiga format utama yang umumnya didukung oleh browser modern:
+MP4: format ini bersifat paling universal dan didukung oleh hampir semua browser utama. Tak hanya itu, format MP4 juga bisa dibaca di semua sistem operasi.
+WebM: WEBM merupakan format terbaik berdasarkan performa karena ukurannya yang kecil. Format ini juga banyak didukung oleh browser, terutama pada browser berbasis Chromium seperti Google Chrome dan Opera. WebM biasanya lebih kecil dari MP4, sehingga dapat memuat lebih cepat. Namun, perlu dipahami bahwa OS Mac tidak mensupport WEBM.
+Ogg: format ini didukung oleh beberapa browser seperti Firefox dan Chrome. Ogg adalah pilihan yang tepat jika kamu ingin memberikan alternatif tambahan. Dengan menyediakan beberapa format, kamu memastikan video dapat diputar di berbagai platform dan device.
+
+Berapa ukuran yang disarankan untuk menyematkan video?
+
+Biasanya, ukuran video yang disarankan dalam penggunaan HTML video bisa bervariasi tergantung pada kebutuhan dan tujuan desain web kamu. Namun, ada beberapa pedoman umum yang bisa kamu pertimbangkan:
+Resolusi
+Resolusi yang umum digunakan adalah 480p (854 x 480 piksel) untuk video dengan kualitas standar dan 720p (1280 x 720 piksel) atau 1080p (1920 x 1080 piksel) untuk video berdefinisi tinggi. Resolusi yang lebih tinggi memberikan kualitas gambar lebih baik tetapi ukuran file-nya lebih besar.
+Ukuran file
+Mengingat waktu pemuatan halaman, ukuran file video sebaiknya tidak terlalu besar. Usahakan file video berukuran di bawah 5MB agar mengoptimalkan user experience. Kamu bisa menggunakan teknik kompresi untuk mengurangi ukuran file tanpa kehilangan kualitas yang signifikan.
+Aspek rasio
+Aspek rasio yang paling umum adalah 16:9 karena cocok untuk kebanyakan layar device. Aspek rasio ini memberikan tampilan proporsional.
+
+Atribut untuk Video
+
+Menyematkan video ke dalam halaman web bukan hanya tentang menentukan sumber file saja. Kamu juga dapat mengontrol bagaimana video tersebut ditampilkan dan berfungsi dengan menggunakan berbagai atribut.
+Berikut di slide selanjutnya ada beberapa atribut yang umum digunakan dalam tag < video > dalam HTML:
+
+<img src="./asets/video.png" alt="">
+
+Cara Cepat Menambahkan Video dari YouTube
+
+Menambahkan video dari YouTube ke halaman web kamu tidak hanya meningkatkan interaktivitas tapi juga memberikan konten berkualitas tanpa perlu menyimpan file video di server.
+Berikut cara melakukannya.
+Langkah 1: temukan video di YouTube
+Pilih video YouTube yang ingin kamu tambahkan ke website. Buka video tersebut di browser.
+Langkah 2: klik tombol "Share"
+Di bawah video, kamu akan melihat tombol "Share". Klik tombol tersebut untuk membuka opsi berbagi.
+
+Cara Cepat Menambahkan Video dari YouTube
+
+Langkah 3: klik "Embed"
+Dalam opsi “Share”, pilih "Embed" atau "Sematkan" (tergantung pada bahasa yang dipakai di YouTube). Langkah ini akan membuka kotak dialog dengan kode yang siap disematkan.
+
+Cara Cepat Menambahkan Video dari YouTube
+
+Langkah 4: copy kode embed
+Di dalam kotak dialog, kamu akan melihat sebuah kode iFrame yang sudah siap digunakan. Copy kode tersebut.
+
+<!-- audio -->
+Apa itu Tag Audio di HTML?
+
+HTML audio adalah salah satu fitur yang berfungsi untuk menyematkan file suara dalam halaman web. Proses ini dilakukan dengan menggunakan tag < audio > yang diperkenalkan dalam HTML5.
+HTML audio membantu dalam menyajikan konten audio seperti murottal al qur’an, wawancara, atau efek suara lainnya langsung dalam browser.
+Tak hanya meningkatkan interaksi dan pengalaman pengguna, HTML audio juga membuka peluang kreatif dalam desain web. Dari situs pembelajaran online sampai platform pendidikan, HTML audio memungkinkan developer menyajikan konten audio secara langsung kepada audiens, membuat website lebih menarik.
+
+
+Cara Menambahkan Audio di HTML
+
+Berikut cara menggunakan elemen < audio > di HTML:
+Pilih file audio yang ingin ditambahkanpastikan kamu memiliki file audio yang ingin disematkan dalam format yang didukung oleh browser, seperti MP3, WAV, atau OGG.
+Tambahkan tag < audio >: di dalam kode HTML, tambahkan tag < audio > di tempat kamu ingin pemutar audio muncul.
+Gunakan atribut src untuk menentukan sumber audio: atribut src dipakai untuk menunjukkan lokasi file audio. Contoh: < audio src= "murotal.mp3" >< /audio >.
+Tambahkan atribut controls jika diperlukan: jika kamu ingin menampilkan kontrol pemutaran seperti tombol play, pause, dan volume, tambahkan atribut controls. Contoh: < audio src= "murottal.mp3" controls>.
+Sediakan format audio alternatif: untuk memastikan kompatibilitas lintas browser, tambahkan elemen < source > dengan format audio yang berbeda. 
+Contoh:
+<img src="./asets/audie.png" alt="">
+
+Format Audio yang Didukung
+
+Elemen < audio > di HTML mendukung berbagai format audio yang memungkinkan kamu menyematkan file suara dalam berbagai jenis. Beberapa format audio yang umum didukung oleh elemen ini adalah:
+MP3 (MPEG Audio Layer III)
+format ini sangat populer dan didukung oleh hampir semua browser modern. MP3 menawarkan kompresi yang baik tanpa kehilangan kualitas yang signifikan.
+WAV (Waveform Audio File Format)
+WAV adalah format tanpa kompresi yang menawarkan kualitas suara sangat tinggi. Namun, kekurangan format ini adalah ukuran file-nya bisa sangat besar.
+OGG (Ogg Vorbis)
+OGG adalah format yang menawarkan ukuran file lebih kecil dibandingkan WAV namun tetap memerhatikan kualitas suara. Format ini adalah alternatif yang bagus untuk MP3.
+
+Attribute untuk Audio
+
+Selain atribut src dan controls, ada beberapa atribut lain yang dapat digunakan untuk mengontrol pemutaran audio, yaitu autoplay, loop, dan muted.
+Atribut autoplay
+atribut ini memungkinkan audio untuk mulai diputar secara otomatis begitu halaman web dimuat. Contoh penggunaannya adalah . Harap diingat bahwa beberapa browser mungkin membatasi atau memblokir autoplay untuk menghindari gangguan bagi audiens.
+Hal lain yang perlu dipahami adalah autoplay hanya bisa digunakan jika audio tersebut diberi property muted terlebih dahulu.
+Atribut loop
+atribut ini membuat audio berulang terus-menerus setelah selesai diputar. Hal ini bisa berguna untuk web yang memiliki background musik atau efek suara berulang. Contoh penggunaannya adalah < audio src="murottal.mp3 " loop>.
+Atribut muted
+atribut ini menyebabkan audio dimainkan dalam keadaan bisu. Pilihan ini bisa berguna jika kamu ingin audio dimulai tanpa suara dan memberi audiens pilihan untuk mengaktifkan suaranya. Contoh penggunaannya adalah < audio src="murottal.mp3" muted> .
+<img src="./asets/audieo2.0.png" alt="">
+
+Audio Sebagai Background
+
+Untuk menambahkan audio latar (backsound) yang otomatis diputar dan tidak terlihat kontrolnya:
+
+<img src="./asets/didden.png" alt="">
+
+autoplay: Audio akan diputar otomatis saat halaman dimuat.
+loop: Audio akan mengulang terus-menerus.
+hidden: Kontrol audio tidak ditampilkan di halaman.
+<source src="file.mp3" type="audio/mp3">: Sumber file audio yang akan diputar. Formatnya adalah .mp3.
+
+
+
+
+
+
+
+
+
+
+

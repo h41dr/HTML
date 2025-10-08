@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      html {
+        font-size: 16px; /* ini jadi dasar rem */
+      }
+
+      .kotak1 {
+        font-size: 2em; /* 2 x 16px (dari parent = html) = 32px */
+      }
+
+      .kotak2 {
+        font-size: 2rem; /* 2 x 16px (dari html langsung) = 32px */
+      }
+
+      .parent {
+        font-size: 20px;
+      }
+
+      .child {
+        font-size: 1em; /* ikut ukuran parent = 20px */
+      }
+    </style>
+
+    <div class="kotak1">Ini pakai em</div>
+    <div class="kotak2">Ini pakai rem</div>
+
+    <div class="parent">
+      Ini parent
+      <div class="child">Ini child pakai 1em (jadi 20px)</div>
+    </div>
+  </body>
+</html>

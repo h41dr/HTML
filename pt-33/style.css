@@ -1,0 +1,50 @@
+/* Reset margin dan padding default browser */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling untuk navbar */
+.navbar {
+  background-color: #333; /* Warna latar belakang navbar */
+  padding: 10px 20px; /* Ruang di dalam navbar */
+  display: flex; /* Mengatur tata letak Flexbox */
+  justify-content: space-between;
+  align-items: center; /* Menyelaraskan item secara vertikal */
+}
+
+/* Styling untuk logo */
+.logo a {
+  color: white;
+  text-decoration: none; /* Menghilangkan garis bawah pada logo */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styling untuk daftar menu */
+.menu {
+  list-style: none; /* Menghilangkan titik-titik pada list */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Styling untuk setiap item menu */
+.menu li {
+  margin-left: 20px; /* Jarak antar item menu */
+}
+
+/* Styling untuk tautan menu */
+.menu li a {
+  color: white; /* Warna teks menu */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  padding: 5px 10px;
+  transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+/* Efek saat hover pada tautan menu */
+.menu li a:hover {
+  background-color: #575757; /* Warna latar saat dihover */
+  border-radius: 5px; /* Sudut membulat saat hover */
+}

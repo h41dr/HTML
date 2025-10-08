@@ -3,11 +3,12 @@ header {
   padding: 15px;
   margin-bottom: 100px;
 }
-.bromo {
+h1 {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 60px;
   color: cornsilk;
+  transition: all 0.3s;
 }
 body {
   background-image: url(../pertemuan-23/asts/Mount_Bromo_East_Java.jpg);
@@ -46,4 +47,8 @@ footer {
   font-size: 25px;
   color: cornsilk;
   text-align: center;
+}
+h1:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s;
 }
