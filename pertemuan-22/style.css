@@ -4,6 +4,7 @@
   margin-bottom: 100px;
   border-radius: 50px;
   background-color: blanchedalmond;
+  position: sticky;
 }
 .warna1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -129,4 +130,6 @@ a:hover {
 }
 body {
   background-color: beige;
+  margin: 0;
+  padding: 0;
 }

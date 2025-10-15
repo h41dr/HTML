@@ -126,3 +126,7 @@ img {
 .div4 {
   display: flex;
 }
+button {
+  transform: translateY(30px);
+  transition: all (03s);
+}

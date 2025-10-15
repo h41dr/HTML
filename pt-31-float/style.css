@@ -1,9 +1,9 @@
-/* .img {
+.img {
   float: right;
   width: 150px;
   margin-left: 20px;
-} */
-/* body {
+}
+body {
   margin-left: 600px;
   margin-right: 600px;
 }
@@ -33,14 +33,14 @@
   float: left;
   width: 150px;
   margin-left: 20px;
-} */
-.box1 {
+}
+/* .box1 {
   width: 200px;
   height: 200px;
   background-color: blue;
   float: left;
-}
-.box2 {
+} */
+/* .box2 {
   width: 200px;
   height: 200px;
   background-color: red;
@@ -51,7 +51,6 @@
   height: 200px;
   background-color: green;
   float: left;
-  /* clear: left; */
 }
 .box4 {
   width: 200px;
@@ -70,8 +69,7 @@
   height: 200px;
   background-color: aqua;
   float: right;
-  /* clear: right; */
-}
+} */
 #clearfix {
   overflow: auto;
 }
