@@ -3,10 +3,190 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./st.css" />
+    <title>Footer Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1;
+        padding: 2rem;
+      }
+
+      .footer {
+        background-color: #f8f9fa;
+        padding: 40px 0 20px;
+        color: #333;
+        border-top: 1px solid #eaeaea;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+      .footer-logo {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 20px;
+      }
+
+      .logo-text {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #2c3e50;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+
+      .link-column {
+        min-width: 150px;
+      }
+
+      .link-column h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #2c3e50;
+      }
+
+      .link-column ul {
+        list-style: none;
+      }
+
+      .link-column ul li {
+        margin-bottom: 10px;
+      }
+
+      .link-column ul li a {
+        text-decoration: none;
+        color: #555;
+        transition: color 0.3s;
+      }
+
+      .link-column ul li a:hover {
+        color: #3498db;
+      }
+
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        border-top: 1px solid #eaeaea;
+        font-size: 14px;
+        color: #777;
+      }
+
+      .footer-bottom-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .footer-bottom-links a {
+        text-decoration: none;
+        color: #777;
+        transition: color 0.3s;
+      }
+
+      .footer-bottom-links a:hover {
+        color: #3498db;
+      }
+
+      .made-by {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .footer-content {
+          flex-direction: column;
+        }
+
+        .footer-links {
+          width: 100%;
+          gap: 20px;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <main>
+      <h1>Website Content</h1>
+      <p>
+        This is the main content area of the website. The footer will appear at
+        the bottom.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-text">logoipsum</div>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-column">
+              <h3>Navigation</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </ul>
+            </div>
+
+            <div class="link-column">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Portfolio</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="made-by">Made with ♥ by <span>Autolcan</span></div>
+
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
