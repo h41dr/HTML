@@ -1,3 +1,102 @@
 {
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "Fira Code, JetBrains Mono, Consolas, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 22,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.renderLineHighlight": "all",
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword",
+        "settings": { "foreground": "#C678DD", "fontStyle": "bold" }
+      },
+      { "scope": "string", "settings": { "foreground": "#5AF78E" } },
+      { "scope": "constant.numeric", "settings": { "foreground": "#00CFFF" } },
+      { "scope": "entity.name.tag", "settings": { "foreground": "#FF6B81" } },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": { "foreground": "#00FFD1" }
+      },
+      { "scope": "variable", "settings": { "foreground": "#FFD166" } },
+      {
+        "scope": "entity.name.function",
+        "settings": { "foreground": "#61AFEF" }
+      },
+      { "scope": "support.class", "settings": { "foreground": "#B084EB" } },
+      {
+        "scope": "comment",
+        "settings": { "foreground": "#6D6D6D", "fontStyle": "italic" }
+      },
+      {
+        "scope": "punctuation.definition.tag",
+        "settings": { "foreground": "#9CDCFE" }
+      },
+      { "scope": "meta.brace", "settings": { "foreground": "#7EE787" } },
+      { "scope": "storage.type", "settings": { "foreground": "#FF79C6" } },
+      { "scope": "support.function", "settings": { "foreground": "#50FA7B" } },
+      {
+        "scope": "invalid",
+        "settings": { "foreground": "#FF5555", "fontStyle": "underline" }
+      },
+      { "scope": "constant.language", "settings": { "foreground": "#2EE6D6" } },
+      { "scope": "variable.language", "settings": { "foreground": "#82AAFF" } },
+      {
+        "scope": "support.constant.property-value",
+        "settings": { "foreground": "#F5A623" }
+      },
+      {
+        "scope": "markup.bold",
+        "settings": { "foreground": "#FFB86C", "fontStyle": "bold" }
+      },
+      {
+        "scope": "markup.italic",
+        "settings": { "foreground": "#8BE9FD", "fontStyle": "italic" }
+      }
+    ]
+  },
+  "background.enabled": true,
+  "background.useDefault": false,
+  "background.customImages": [
+    "C:/Users/YourName/Pictures/vscode-wallpaper/hacker-neon-dark.jpg"
+  ],
+  "background.style": {
+    "opacity": 0.08,
+    "size": "cover",
+    "position": "center",
+    "repeat": "no-repeat",
+    "blend": "darken"
+  },
+  "window.zoomLevel": 0,
+  "terminal.integrated.fontFamily": "Fira Code, monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorBlinking": true,
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": true,
+  "workbench.statusBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "terminal.integrated.scrollback": 10000,
+  "extensions.recommendations": [
+    "zhuangtongfa.Material-theme",
+    "vscode-icons-team.vscode-icons",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "shalldie.background",
+    "pkief.material-icon-theme",
+    "aaron-bond.better-comments"
+  ],
   "livePreview.defaultPreviewPath": "/tugas sebelum masuk js/index.html"
 }

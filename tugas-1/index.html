@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,5 +39,195 @@
       keajaiban menanti untuk dieksplorasi.
     </p>
     <p>Copyright&copy; 2023</p>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Kontak</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-container {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+      }
+
+      h1 {
+        color: #333;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .description {
+        color: #666;
+        margin-bottom: 25px;
+        line-height: 1.5;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: 500;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #4a90e2;
+      }
+
+      .name-row {
+        display: flex;
+        gap: 15px;
+      }
+
+      .name-row .form-group {
+        flex: 1;
+      }
+
+      textarea {
+        height: 120px;
+        resize: vertical;
+      }
+
+      .checkbox-group {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+      }
+
+      .checkbox-group input {
+        width: auto;
+        margin-right: 10px;
+        margin-top: 3px;
+      }
+
+      .checkbox-group label {
+        margin-bottom: 0;
+        font-weight: normal;
+      }
+
+      .submit-btn {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+      }
+
+      .submit-btn:hover {
+        background-color: #3a7bc8;
+      }
+
+      @media (max-width: 600px) {
+        .name-row {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .contact-container {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-container">
+      <h1>Hubungi Saya</h1>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor,
+        nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies
+        nisl nisl eget nisl.
+      </p>
+
+      <form>
+        <div class="name-row">
+          <div class="form-group">
+            <label for="first-name">Nama Depan</label>
+            <input type="text" id="first-name" placeholder="Nama depan Anda" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Nama Belakang</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Nama belakang Anda"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="alamat@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Nomor Telepon</label>
+          <input type="tel" id="phone" placeholder="+62 xxx xxxx xxxx" />
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Pilih Topik</label>
+          <select id="topic">
+            <option value="" disabled selected>Pilih satu...</option>
+            <option value="general">Pertanyaan Umum</option>
+            <option value="support">Bantuan Teknis</option>
+            <option value="collaboration">Kolaborasi</option>
+            <option value="feedback">Umpan Balik</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea id="message" placeholder="Ketik pesan Anda..."></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" />
+          <label for="terms">Saya menyetujui syarat dan ketentuan</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Kirim</button>
+      </form>
+    </div>
   </body>
 </html>

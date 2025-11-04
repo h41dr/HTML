@@ -1,14 +1,100 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efek Hover Naik dengan Garis Ungu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="kontainer">
-        <p>Arahkan kursor ke sini</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Halaman Kontak</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        gap: 40px;
+      }
+      .contact-form {
+        flex: 2;
+      }
+
+      .contact-form h2 {
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        height: 120px;
+      }
+
+      .form-group button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .form-group button:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact-form">
+        <h2>Formulir Kontak</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Kirim</button>
+          </div>
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
