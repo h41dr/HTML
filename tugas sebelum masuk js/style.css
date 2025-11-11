@@ -636,4 +636,7 @@ textarea {
   font-weight: 500;
   color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* done */
