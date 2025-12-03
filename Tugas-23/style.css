@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: "Poppins", sans-serif;
+}
+.poster {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 35px;
+  width: 500px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.judul {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.motivasi {
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.subjudul {
+  margin: 30px;
+  animation: ganti 2s ease-in-out infinite alternate;
+}
+.btn {
+  background-color: rgb(187, 82, 82);
+  color: white;
+  border: 0;
+  padding: 20px 35px 20px 35px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.4s, transform 0.4s;
+}
+
+/* hover */
+
+.judul:hover,
+.motivasi:hover {
+  color: brown;
+}
+.poster:hover {
+  transform: scale(1.06);
+}
+.btn:hover {
+  transform: scale(1.09);
+  background-color: brown;
+}
+
+/* Keyframes */
+
+@keyframes ganti {
+  from {
+    color: brown;
+    opacity: 0.5;
+  }
+  to {
+    color: chocolate;
+    opacity: 1;
+  }
+}
