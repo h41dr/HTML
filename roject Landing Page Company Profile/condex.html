@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdzSys - Inovasi Manajemen Pondok</title>
+    <style>
+      /* Reset & Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header */
+      header {
+        background: white;
+        padding: 15px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav li {
+        margin-left: 30px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #007bff;
+      }
+
+      .demo-btn {
+        background: #007bff;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .demo-btn:hover {
+        background: #0056b3;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+        padding: 60px 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .hero-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .hero-text p {
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+      }
+
+      .cta-button {
+        background: #ff6b6b;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        transition: background 0.3s;
+      }
+
+      .cta-button:hover {
+        background: #ff5252;
+      }
+
+      .hero-images {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .hero-images img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Features Section */
+      .features {
+        background: white;
+        padding: 60px 20px;
+        border-radius: 30px;
+        margin: 40px auto;
+        max-width: 1200px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .features h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 20px;
+        justify-items: center;
+      }
+
+      .feature-item {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        width: 100%;
+        max-width: 120px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .feature-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .feature-title {
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+
+      /* About Section */
+      .about {
+        padding: 60px 20px;
+        background: #f8f9fa;
+        margin: 40px 0;
+      }
+
+      .about-content {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .about-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .about-text h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+      }
+
+      .about-text p {
+        margin-bottom: 15px;
+      }
+
+      .about-image {
+        flex: 1;
+        min-width: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .section-title {
+        text-align: center;
+        margin: 50px 0 30px;
+        font-size: 2rem;
+        color: #007bff;
+      }
+
+      /* Problems Section */
+      .problems {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        padding: 60px 20px;
+        color: white;
+      }
+
+      .problems h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+
+      .problems p {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+      }
+
+      .problems-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .problem-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .problem-card::before {
+        content: "❌";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2rem;
+        color: #ff6b6b;
+      }
+
+      .problem-image {
+        width: 100%;
+        height: 150px;
+        background: #ddd;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+
+      .problem-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .problem-title {
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 0.9rem;
+      }
+
+      /* Solution Section */
+      .solution {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 60px 20px;
+        color: white;
+        text-align: center;
+      }
+
+      .solution h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+      }
+
+      .solution p {
+        margin-bottom: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .solution-btn {
+        background: #ff6b6b;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        transition: background 0.3s;
+      }
+
+      .solution-btn:hover {
+        background: #ff5252;
+      }
+
+      /* Features List Section */
+      .features-list {
+        padding: 60px 20px;
+        background: #f8f9fa;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .features-box {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+      }
+
+      .features-box h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #007bff;
+      }
+
+      .feature-list {
+        list-style: none;
+      }
+
+      .feature-list li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .feature-list li::before {
+        content: "✓";
+        color: #28a745;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .phone-image {
+        width: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .phone-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Testimonials */
+      .testimonials {
+        padding: 60px 20px;
+        background: white;
+        text-align: center;
+      }
+
+      .testimonials h2 {
+        margin-bottom: 40px;
+        font-size: 2rem;
+      }
+
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+      }
+
+      .testimonial-card {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        color: white;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonial-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 15px;
+      }
+
+      .testimonial-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .testimonial-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .testimonial-role {
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      .stars {
+        color: #ffc107;
+        font-size: 1.2rem;
+        margin: 15px 0;
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        margin-top: 15px;
+        line-height: 1.5;
+      }
+
+      /* Blog Section */
+      .blog {
+        padding: 60px 20px;
+        background: #f8f9fa;
+      }
+
+      .blog h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+
+      .blog p {
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .blog-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .blog-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .blog-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .blog-content {
+        padding: 20px;
+      }
+
+      .blog-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      .blog-excerpt {
+        color: #666;
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+      }
+
+      .read-more {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      .read-more:hover {
+        text-decoration: underline;
+      }
+
+      /* CTA Footer */
+      .cta-footer {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 60px 20px;
+        color: white;
+        text-align: center;
+      }
+
+      .cta-footer h2 {
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .btn-primary {
+        background: #ff6b6b;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: background 0.3s;
+      }
+
+      .btn-primary:hover {
+        background: #ff5252;
+      }
+
+      .btn-secondary {
+        background: #007bff;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: background 0.3s;
+      }
+
+      .btn-secondary:hover {
+        background: #0056b3;
+      }
+
+      /* Footer */
+      footer {
+        background: #007bff;
+        color: white;
+        padding: 40px 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .footer-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: white;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .footer-logo img {
+        height: 60px;
+      }
+
+      .footer-about {
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      .footer-links h4 {
+        margin-bottom: 20px;
+        font-size: 1rem;
+      }
+
+      .footer-links ul {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 10px;
+      }
+
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+      }
+
+      .footer-links a:hover {
+        opacity: 1;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        color: white;
+        background: rgba(255, 255, 255, 0.1);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .social-icons a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .copyright {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0.8rem;
+        opacity: 0.7;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-text {
+          order: 2;
+        }
+
+        .hero-images {
+          order: 1;
+          justify-content: center;
+        }
+
+        .about-content {
+          flex-direction: column;
+        }
+
+        .features-list {
+          flex-direction: column;
+          gap: 30px;
+        }
+
+        .features-box {
+          width: 100%;
+        }
+
+        .phone-image {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+
+      /* Placeholder Icons */
+      .icon-placeholder {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+      }
+
+      /* Custom Icons for Features */
+      .icon-usaha::before {
+        content: "🏢";
+      }
+      .icon-keuangan::before {
+        content: "💰";
+      }
+      .icon-kesehatan::before {
+        content: "🏥";
+      }
+      .icon-tahfizh::before {
+        content: "📖";
+      }
+      .icon-kesantrian::before {
+        content: "👥";
+      }
+      .icon-pelanggaran::before {
+        content: "⚖️";
+      }
+      .icon-perizinan::before {
+        content: "📝";
+      }
+      .icon-raport::before {
+        content: "📊";
+      }
+      .icon-tatausaha::before {
+        content: "📁";
+      }
+
+      /* Stars */
+      .star {
+        color: #ffc107;
+        font-size: 1.2rem;
+      }
+
+      /* Demo Images Placeholder */
+      .placeholder-img {
+        background: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+        font-size: 0.8rem;
+      }
+
+      .placeholder-img img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img
+            src="https://via.placeholder.com/100x50?text=AdzSys+Logo"
+            alt="AdzSys Logo"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="demo-btn">Coba Versi Demo →</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>
+          Inovasi Manajemen Pondok dalam Genggaman Satu Aplikasi,
+          <span style="color: #283593">AdzSys</span>
+        </h1>
+        <p>
+          Pondok Pesantren Sipond Mencakup Aplikasi Keuangan Santri, Aplikasi
+          Data Santri, Aplikasi Tata Usaha/Administrasi, Aplikasi Absensi, dll.
+          Terintegrasi menjadi satu aplikasi!
+        </p>
+        <a href="#" class="cta-button">Pelajari Lebih Lanjut →</a>
+      </div>
+      <div class="hero-images">
+        <img
+          src="https://via.placeholder.com/200x400?text=Mobile+App"
+          alt="Mobile App"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Tablet+View"
+          alt="Tablet View"
+        />
+        <img
+          src="https://via.placeholder.com/300x200?text=Classroom"
+          alt="Classroom"
+        />
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2>
+        Mudahkan Manajemen Semua Kebutuhan Manajemen Pondok dengan bantuan
+        Aplikasi AdzSys :
+      </h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="icon-placeholder icon-usaha"></div>
+          <div class="feature-title">Unit Usaha</div>
+        </div>
+        <div class="feature-item">
+          <div class="icon-placeholder icon-keuangan"></div>
+          <div class="feature-title">Keuangan</div>
+        </div>
+        <div class="feature-item">
+          <div class="icon-placeholder icon-kesehatan"></div>
+          <div class="feature-title">Kesehatan</div>
+        </div>
+        <div class="feature-item">
+          <div class="icon-placeholder icon-tahfizh"></div>
+          <div class="feature-title">Tahfizh</div>
+        </div>
+        <div class="feature-item">
+          <div class="icon-placeholder icon-kesantrian"></div>
+          <div class="feature-title">Kesantrian</div>
+        </div>
+        <div class="feature-item">
+          <div class="icon-placeholder icon-pelanggaran"></div>
+          <div class="feature-title">Pelanggaran</div>
+        </div>
+        <div class="feature-item">
+          <div class="icon-placeholder icon-perizinan"></div>
+          <div class="feature-title">Perizinan</div>
+        </div>
+        <div class="feature-item">
+          <div class="icon-placeholder icon-raport"></div>
+          <div class="feature-title">Raport & PSB</div>
+        </div>
+        <div class="feature-item">
+          <div class="icon-placeholder icon-tatausaha"></div>
+          <div class="feature-title">Tata Usaha</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>
+              Selamat datang di layanan aplikasi manajemen pondok,
+              <span style="color: #007bff">AdzSys</span>!
+            </h2>
+            <p>
+              Kami menawarkan solusi inovatif untuk mempermudah pengelolaan data
+              pondok pesantren.
+            </p>
+            <p>
+              Kami memperkenalkan aplikasi AdzSys, yang terdiri dari dua bagian.
+              Pertama, aplikasi web-based yang dapat diakses melalui browser
+              untuk admin pondok pesantren, meliputi tata usaha, kesantrian,
+              tahfizh, dan keuangan. Kedua, aplikasi Android untuk walisatri
+              yang tersedia di Playstore.
+            </p>
+            <p>
+              AdzSys juga ideal digunakan di Sekolah Islam sebagai aplikasi spp
+              sekolah, aplikasi keuangan sekolah atau juga aplikasi administrasi
+              sekolah karena secara umum pengelolaan administrasi dan keuangan
+              sekolah lebih simple daripada pondok pesantren.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://via.placeholder.com/600x400?text=Classroom+Scene"
+              alt="Classroom Scene"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="problems">
+      <h2>Masalah Apa Saja yang Diatasi AdzSys?</h2>
+      <p>
+        Kami membereskan berbagai masalah manajemen pondok langsung dalam satu
+        aplikasi!
+      </p>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="problem-image">
+            <img
+              src="https://via.placeholder.com/300x150?text=Laptop+with+Charts"
+              alt="Data Entry Problem"
+            />
+          </div>
+          <div class="problem-title">Sulit menginput data tunggakan SPP</div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-image">
+            <img
+              src="https://via.placeholder.com/300x150?text=Quran+Book"
+              alt="Tahfizh Management"
+            />
+          </div>
+          <div class="problem-title">
+            Sulit mengelola data Tahfizh Al-Qur'an Para Santri
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-image">
+            <img
+              src="https://via.placeholder.com/300x150?text=Stack+of+Papers"
+              alt="Administrative Chaos"
+            />
+          </div>
+          <div class="problem-title">
+            Pembukuan Keuangan & Administrasi Berantakan
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-image">
+            <img
+              src="https://via.placeholder.com/300x150?text=Warehouse"
+              alt="Business Unit"
+            />
+          </div>
+          <div class="problem-title">
+            Ribet Mengelola Unit Usaha Pesantren/Sekolah
+          </div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-image">
+            <img
+              src="https://via.placeholder.com/300x150?text=Calculator+and+Money"
+              alt="Cash Management"
+            />
+          </div>
+          <div class="problem-title">Sulit Mengelola Uang Saku Para Santri</div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-image">
+            <img
+              src="https://via.placeholder.com/300x150?text=Tired+Man+at+Desk"
+              alt="Overwhelmed Admin"
+            />
+          </div>
+          <div class="problem-title">
+            Pusing Banyak Keluhan Para Wali Santri
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+      <h2>
+        Mari Atasi Kendala Dan Masalah Manajemen Pondok Dengan Bantuan AdzSys
+      </h2>
+      <p>
+        AdzSys berkomitmen untuk berkolaborasi bersama dengan pondok pesantren
+        dan sekolah Islam di Indonesia demi kemajuan bersama, menjadikan pondok
+        yang lebih unggul, lebih maju/modern, memiliki manajemen yang bagus, dan
+        membangun keakraban yang baik dengan walisatri.
+      </p>
+      <a href="#" class="solution-btn">Hubungi Kami 📞</a>
+    </section>
+
+    <!-- Features List Section -->
+    <section class="features-list">
+      <div class="features-box">
+        <h3>&lt; Keunggulan Fitur &gt;</h3>
+        <ul class="feature-list">
+          <li>Lorem Ipsum Dolor Sit Amet.</li>
+          <li>Lorem Ipsum Dolor Sit Amet.</li>
+          <li>Lorem Ipsum Dolor Sit Amet.</li>
+          <li>Lorem Ipsum Dolor</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
