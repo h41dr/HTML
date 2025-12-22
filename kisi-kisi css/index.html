@@ -1,12 +1,12 @@
 01 { [Pengenalan Dasar CSS] Pemahaman tentang CSS sangat penting, jika kita
 ingin fokus pada front-end web development. Tanpa menggunakan CSS, kita tidak
-mungkin akan bisa membuat web berdasarkan desain yang ditentukan desainer. } 
+mungkin akan bisa membuat web berdasarkan desain yang ditentukan desainer. }
 
 02
 [Apa itu CSS?] CSS (Cascade Style Sheet) adalah sebuah bahasa untuk mengatur
 tampilan web sehingga terlihat lebih menarik dan indah. Dengan CSS, kita dapat
 mengatur layout (tata letak), warna, font, garis, background, animasi, dan
-lain-lain. 
+lain-lain.
 
 03 { [Sejarah dan Perkembangan CSS] } video.html History; { ‘Sebelum
 adanya CSS, tidak ada bahasa yang dipakai untuk memberikan style pada dokumen
@@ -47,19 +47,19 @@ Mei 1998
 
 04 { [Perkembangan Versi CSS]
 <Sejak awal dirilis, CSS memiliki beberapa versi>
-  }Features of ‘the Topic’ 
-  { adalah versi pertama (17 Desember 1996) CSS 1 
+  }Features of ‘the Topic’
+  { adalah versi pertama (17 Desember 1996) CSS 1
    CSS 2
-  adalah versi ke-2 (Mei 1998) CSS 
-  2.1 dirilis pada 7 juni 2011 
+  adalah versi ke-2 (Mei 1998) CSS
+  2.1 dirilis pada 7 juni 2011
   CSS 3 versi yang
   banyak digunakan saat ini. }
 </Sejak> -->
 
 <!-- cara penulisan
 
- 01 
-[Internal CSS] 
+ 01
+[Internal CSS]
 Internal CSS adalah kode CSS yang ditulis di dalam tag <style>. Intarnal CSS juga dikenal dengan sebutan Embeded CSS.
 Tag <style> bisa ditulis di dalam tag <head>, bisa juga ditulis di dalam tag <body>. Namun kebanyakan orang menulisnya di dalam <head>  -->
 
@@ -72,7 +72,7 @@ atribut style di elemen HTML. Kode CSS ditulis langsung tanpa menggunakan kurung
 kurawal{ ... }. Kemudian properti tetap dipisah dengan titik koma > } -->
 
 <!-- Menghubungkan dengan 2 Cara { Untuk menggunakan CSS ini, kita harus
-menghubungkannya dengan HTML. Ada dua cara yang bisa kita lakukan: 
+menghubungkannya dengan HTML. Ada dua cara yang bisa kita lakukan:
 1.Menggunakan tag <link />
 2. Menggunakan @import } -->
 
@@ -86,10 +86,10 @@ sintaks dasar CSS agar tidak salah tulis. > } -->
 <!-- 02 { [Struktur Dasar CSS?] < Struktur kode CSS terdiri dari tiga bagian:
 Selektor Blok Deklarasi Properti dan nilanya > } <img src="./asets/Screenshot 2025-10-01 111140.png" alt=""> -->
 <!-- #1 Selektor{ < Selektor adalah kata kunci untuk memilih elemen HTML yang akan
-kita beri style > } ] 
+kita beri style > } ]
 #2 Blok Deklarasi{ < Blok deklarasi adalah tempat kita
 menuliskan atribut atau properti CSS yang akan diberikan ke pada elemen yang
-telah diseleksi. > } 
+telah diseleksi. > }
 #3 Properti dan Nilainya{ < Properti adalah sekumpulan
 aturan yang akan diberikan kepada elemen yang dipilih. > } -->
 
@@ -107,7 +107,7 @@ Selektor Universal, Selektor Pseudo> } -->
 
 <!-- 02 { [Selektor Tag] < Selektor Tag disebut juga Type Selector. Selektor ini akan
 memilih elemen berdasarkan nama tag. > } -->
-<!-- 
+<!--
 03 { [Selektor Class] < Selektor class adalah selektor yang memilih elemen
 berdasarkan nama class yang diberikan. Selektor class dibuat dengan tanda titik
 di depannya. > } -->
@@ -164,14 +164,14 @@ selector { color: nilai_warna; } -->
 
 Ada beberapa cara untuk menentukan warna di CSS, yaitu:
 
-Nama Warna (Color Names) 
+Nama Warna (Color Names)
 CSS memiliki daftar nama-nama warna yang dapat langsung digunakan seperti red, blue, green, yellow, dan banyak lagi.
 
 Contoh :
 p { color: red; }
 
 
-Kode Warna Hexadecimal (Hex Code) 
+Kode Warna Hexadecimal (Hex Code)
 Kode hexadecimal adalah cara populer untuk menentukan warna dengan format #RRGGBB, di mana RR, GG, dan BB mewakili intensitas warna merah, hijau, dan biru.
 
 Contoh:
@@ -179,12 +179,12 @@ Contoh:
 
 <!-- Nilai yang Valid untuk Warna
 
-RGB (Red, Green, Blue) 
+RGB (Red, Green, Blue)
 RGB menggunakan fungsi rgb() untuk menentukan warna dengan nilai masing-masing warnamerah, hijau, dan biru dalam skala 0 hingga 255.
 Contoh:
 div { color: rgb(255, 99, 71); /* Warna Tomat */ }
 
-RGBA (Red, Green, Blue, Alpha) 
+RGBA (Red, Green, Blue, Alpha)
 Serupa dengan RGB, namun memiliki nilai tambahan alpha yang mengontrol transparansi warna. Nilai alpha berkisar antara 0 (transparan) hingga 1 (opaq).
 Contoh:
 div { color: rgba(255, 99, 71, 0.5); /* Warna Tomat dengan Transparansi 50% */ } -->
@@ -238,9 +238,9 @@ background. > } -->
 
  <!-- 01 {
 
-[Text Align di CSS] 
+[Text Align di CSS]
 
-< Jika kamu pernah menggunakan aplikasi Office, pasti pernah mengenal perataan teks. Ada rata kiri, rata kanan, rata tengah, rata kiri dan kanan > 
+< Jika kamu pernah menggunakan aplikasi Office, pasti pernah mengenal perataan teks. Ada rata kiri, rata kanan, rata tengah, rata kiri dan kanan >
 
 Kita juga bisa meratakan teks dengan properti CSS text-align. Properti ini punya nilai yang valid:
 
@@ -251,7 +251,7 @@ justify untuk rata kiri dan kanan;
 start rata pada awal (mengikuti direction);
 end rata pada akhir (mengikuti direction);
 
-[Text Direction di CSS] 
+[Text Direction di CSS]
 
 < CSS punya properti direction untuk menentukan arah baca teks. Misalnya dari kiri ke kanan (ltr) atau dari kanan ke kiri (rtl).
 
@@ -259,7 +259,7 @@ Secara umum teks biasanya dibaca dari kiri ke kanan. Tapi ada juga yang dibaca d
 
 Jika kita membuat website dengan bahasa arab, lalu membiarkan direction menggunakan left to right (ltr), maka hasilnya akan seperti ini. >
 
-[Text Decoration di CSS] 
+[Text Decoration di CSS]
 
 < Properti text-decoration adalah properti untuk memberikan dekorasi garis pada teks. Contohnya seperti garis bawah, garis atas, dan garis di tengah (teks tercoret). >
 Properti ini punya nilai berupa:
@@ -272,7 +272,7 @@ line-through dekorasi garis di tengah atau teks tercoret.
 
 04 {
 
-[Text Transform di CSS] 
+[Text Transform di CSS]
 
 < Properti text-transform berfungsi untuk mengubah bentuk teks. Misalnya dari huruf kecil menjadi huruf besar. >
 Berikut ini nilai-nilai yang valid untuk text-transform
@@ -283,7 +283,7 @@ uppercase untuk mengubah semua teks menjadi huruf kapital (besar);
 capitalize untuk mengubah teks pada huruf pertama kata menjadi kapital.
 none untuk tidak melakukan transform.
 
-[Text Spacing di CSS] 
+[Text Spacing di CSS]
 
 < Text Spacing adalah ruang kosong pada teks>
 CSS menyediakan beberapa properti untuk mengatur spacing pada teks
@@ -295,7 +295,7 @@ line-height untuk mengatur jarak antar baris;
 word-spacing untuk mengatur jarak antar kata;
 white-space untuk mengatur white space pada teks.
 
-[Text Overflow di CSS] 
+[Text Overflow di CSS]
 
 < Properti text-overflow berfungsi untuk mengatur panjang teks yang melebihi ukuran dari elemen.
 
@@ -304,7 +304,7 @@ Secara default, teks akan ditulis ke baris baru jika melebihi batas elemen. Namu
 
 Oleh sebab itu, pada kasus ini kita membutuhkan text-overflow untuk mengatur teks tersebut.
 
-[Text Shadow di CSS] 
+[Text Shadow di CSS]
 
 < Properti text-shadow merupakan properti untuk memberikan bayangan pada teks. Properti ini mulai ada pada CSS3 >
 Format nilai untuk text-shadow adalah sebagai berikut:
@@ -323,7 +323,7 @@ Warna warna bayangan, bisa diberikan dalam nama warna, fungsi rgb(), hsl(), dsb
 
 <!-- 01 { [Mengatur Ukuran Font di CSS] < Untuk mengatur ukuran font, kita bisa
 menggunakan properti font-size. Properti ini dapat kita beri nilai dengan satuan
-px (piksel), % (persentase), em, rem, dan lain-lain > } 
+px (piksel), % (persentase), em, rem, dan lain-lain > }
 Format nilai untuk text-shadow adalah sebagai berikut:
 text-shadow: x y blur warna;
 
@@ -340,7 +340,7 @@ Lalu ukuran font pada paragraf pertama adalah large yang artinya lebih besar dar
 Kemudian pada paragraf kedua, kita tidak mengatur ukuran font-nya. Sehingga akan menggunakan ukuran normal, yakni 16px.
 Kemudian paragraf terakhir kita beri ukuran font-nya dengan small.
 -->
-<!-- 
+<!--
 02 { [Mengatur Ketebalan Font di CSS] < Untuk mengatur ketebalan font, kita bisa
 menggunakan properti font-weight. Properti ini dapat kita berikan nilai berupa
 angka ukuran ketebalan atau nilai konstan yang sudah ada. > }
@@ -356,13 +356,13 @@ bolder untuk membuat font lebih tebal lagi;
 
 <!-- 03 { [Mengatur Font Style di CSS] < Properti font-style digunakan untuk mengatur
 agar teks miring. Nilai yang valid untuk properti ini adalah: normal – teks
-normal; 
-italic – teks miring (italic); 
+normal;
+italic – teks miring (italic);
 oblique – teks miring seperti italic; > } -->
 
 <!-- 04 { [Mengatur Jenis Font di CSS] < Untuk mengatur jenis font, kita bisa gunakan
 properti font-family. Properti ini bisa kita isi dengan nama font dan juga nama
-family dari font. > } 
+family dari font. > }
 
 Secara umum ada lima jenis family font:
 
@@ -401,7 +401,7 @@ berfungsi untuk membuat pojok elemen menjadi tumpul atau nggak lancip> } -->
 <!-- 05 { < Selain menggunakan border style yang sudah ada, kita bisa menggunakan
 gambar sebagai border. Caranya menggunakan properti border-image Properti
 border-image merupakan properti gabungan dari beberapa properti untuk membuat
-garis dengan gambar.> } 
+garis dengan gambar.> }
 
 Secara umum ada lima jenis family font:
 
@@ -452,7 +452,7 @@ teks yang lebih kecil dari small; Modifier viewport l (large), s (small), dan d
 (dynamic), Contoh: lvh, svw } -->
 
 <!-- box model  -->
-  
+
 01 { [Pengertian Model Kotak di CSS] < Dalam CSS, istilah "model kotak"
 digunakan ketika berbicara tentang desain dan tata letak > }
 <img src="./asets/box.png" alt="" />g
@@ -483,3 +483,153 @@ height + padding atas + padding bawah + border atas + border bawah + margin atas
 
 <!-- 04 { [Memperbaiki box model] < Dengan properti box-sizing Anda bisa memperbaiki
 suatu elemen box/kotak agar sesuai dengan properti width dan height > }
+
+
+SAS
+
+
+1. CSS Position (Tugas #16)
+
+Mengatur posisi elemen pada halaman web.
+Jenisnya: static, relative, absolute, fixed, sticky.
+
+2. CSS Float (Tugas #17)
+
+Digunakan untuk menggeser elemen ke kiri/kanan, biasanya untuk layout lama atau teks mengelilingi gambar.
+
+3. Display & List (Tugas #18)
+
+Display: Mengatur cara elemen ditampilkan (block, inline, inline-block, none).
+
+List: Mengatur tampilan daftar (ul, ol) seperti bullet dan posisi list.
+
+4. CSS Overflow (Tugas #19)
+
+Mengatur konten yang melebihi ukuran elemen.
+Nilai umum: hidden, scroll, auto, visible.
+
+5. Responsive Website – Flexbox (Tugas #20)
+
+Flexbox adalah sistem layout untuk mengatur elemen agar fleksibel dan responsif dalam satu baris atau kolom.
+
+6. Responsive Website – Media Query (Tugas #21)
+
+Digunakan untuk menyesuaikan tampilan website berdasarkan ukuran layar (HP, tablet, laptop).
+
+7. Pseudo Class & Pseudo Element (Tugas #22)
+
+Pseudo Class: Styling saat kondisi tertentu (:hover, :active).
+
+Pseudo Element: Styling bagian tertentu elemen (::before, ::after).
+
+8. Animation & Transition (Tugas #23)
+
+Transition: Efek perubahan halus antar style.
+
+Animation: Membuat gerakan otomatis menggunakan @keyframes.
+
+9. Materi Tambahan
+
+Visual Effect & Interactive: Efek visual agar website lebih menarik dan interaktif.
+
+Responsive Website: Teknik agar website nyaman di semua ukuran layar.
+
+
+ESAI
+
+1. Apa fungsi dari media query secara singkat?
+
+Jawaban:
+Media query berfungsi untuk mengatur tampilan website agar responsif sesuai dengan ukuran layar perangkat (HP, tablet, laptop).
+
+Penjelasan:
+Dengan media query, tampilan CSS bisa berubah tergantung lebar layar, resolusi, atau orientasi perangkat.
+
+2. Sebutkan fungsi dari kerangka semantic HTML dalam layout website
+
+Jawaban:
+Membuat struktur website lebih teratur, jelas, dan mudah dipahami oleh browser dan developer.
+
+Penjelasan:
+Tag seperti <header>, <nav>, <section>, <article>, dan <footer> membantu memberi arti pada setiap bagian halaman.
+
+3. Apa fungsi box-shadow?
+
+Jawaban:
+Menambahkan efek bayangan pada elemen HTML.
+
+Penjelasan:
+Digunakan agar elemen terlihat lebih menarik dan memiliki efek kedalaman.
+
+4. Jelaskan perbedaan inline, internal, dan external CSS
+
+Jawaban:
+
+Inline CSS: Ditulis langsung pada atribut style di elemen HTML
+
+Internal CSS: Ditulis di dalam tag <style> pada bagian <head>
+
+External CSS: Ditulis di file .css terpisah dan dihubungkan ke HTML
+
+Penjelasan:
+External CSS paling disarankan karena rapi dan bisa digunakan di banyak halaman.
+
+5. Sebutkan fungsi dari font-family
+
+Jawaban:
+Mengatur jenis huruf (font) pada teks.
+
+Penjelasan:
+Contoh: Arial, Times New Roman, Poppins, dan lainnya.
+
+6. Bagaimana tahapan membuat background gradasi di CSS?
+
+Jawaban:
+
+Gunakan properti background atau background-image
+
+Gunakan fungsi linear-gradient() atau radial-gradient()
+
+Tentukan arah dan warna gradasi
+
+Penjelasan:
+Gradasi adalah perpaduan dua warna atau lebih secara bertahap.
+
+7. Apa yang dimaksud dengan form?
+
+Jawaban:
+Form adalah elemen HTML yang digunakan untuk menerima input data dari pengguna.
+
+Penjelasan:
+Contohnya input nama, email, password, dan tombol submit.
+
+8. Sebutkan secara singkat cara menambahkan gambar ke halaman web menggunakan tag HTML
+
+Jawaban:
+Menggunakan tag <img>.
+
+Penjelasan:
+Tag <img> digunakan untuk menampilkan gambar di halaman web.
+
+9. Sebutkan apa saja yang termasuk struktur dasar HTML
+
+Jawaban:
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<body>
+
+Penjelasan:
+Struktur ini wajib agar browser bisa membaca halaman HTML dengan benar.
+
+10. Apa fungsi dari class pada CSS?
+
+Jawaban:
+Class berfungsi sebagai penanda untuk memberi style CSS pada satu atau lebih elemen.
+
+Penjelasan:
+Class bisa digunakan berulang kali pada banyak elemen berbeda.

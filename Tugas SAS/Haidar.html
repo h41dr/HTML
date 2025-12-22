@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASAS IT Semester I</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .btn:hover {
+        transform: scale(1.09);
+        background-color: #328eda;
+      }
+      .section:hover {
+        transform: scale(1.05);
+      }
+      @keyframes gerakDariSamping {
+        from {
+          transform: translateX(100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes gerakDariSamping2 {
+        from {
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url(https://fastly.picsum.photos/id/29/600/700.jpg?hmac=sFz0vep5ZlPp4VC_6RV3ND2TZ0F3wGpjtgXI4HhErj4);
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    <div
+      class="section"
+      style="
+        display: flex;
+        justify-content: space-between;
+        margin-top: 300px;
+        background-color: white;
+        align-items: center;
+        height: 500px;
+        margin-left: 500px;
+        margin-right: 500px;
+        box-shadow: 0 6px 100px #d5dff0;
+        transition: transform 0.25s ease-out;
+        border-radius: 20px;
+      "
+    >
+      <div class="box2" style="margin-left: 50px">
+        <img
+          src="https://fastly.picsum.photos/id/1/200/300.jpg?hmac=jH5bDkLr6Tgy3oAg5khKCHeunZMHq0ehBZr6vGifPLY"
+          alt=""
+          style="
+            width: 300px;
+            border-radius: 10px;
+            animation: geser 2s ease-in-out infinite alternate;
+            animation: gerakDariSamping2 1s ease-out forwards;
+          "
+        />
+      </div>
+
+      <div
+        class="box1"
+        style="
+          margin-left: 10px;
+          margin-right: 100px;
+          animation: pulse 1.2s ease-in-out infinite;
+          animation: gerakDariSamping 1s ease-out forwards;
+        "
+      >
+        <h1
+          style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 55px;
+          "
+        >
+          Alex johnson
+        </h1>
+
+        <p
+          style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: 200;
+            padding-top: 10px;
+          "
+        >
+          Web Developer & Designer
+        </p>
+
+        <p
+          style="
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            max-width: 550px;
+            color: gray;
+            padding-top: 10px;
+          "
+        >
+          Passionate about creating intuive and dynamic user experiences
+        </p>
+
+        <button
+          class="btn"
+          style="
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            background-color: #1863a0;
+            cursor: pointer;
+            color: white;
+            margin-top: 20px;
+            transition: transform 0.25s ease-out;
+          "
+        >
+          Explore Now
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
