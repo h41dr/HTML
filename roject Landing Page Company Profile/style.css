@@ -189,8 +189,8 @@ nav {
     margin-right: 50px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
-    background: white;
-    padding: 15px 50px;
+    background-color: white;
+    padding:;
     border: none;
     border-radius: 999px;
     transition: transform 0.25s ease-out;
